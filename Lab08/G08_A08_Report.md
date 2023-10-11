@@ -173,11 +173,11 @@ Your program should also listen for incoming data on the UART with the same baud
 ## Results:
 
 
-<img src="images/GreenLED.jpeg" alt="Green LED" width="250"/>
+<img src="images/GreenLed.jpeg" alt="Green LED" width="250"/>
 
 * "AA" is received at the receiver so Green Led should blink *
 
-<img src="images/BlueLED.jpeg" alt="50% duty cycle" width="250"/>
+<img src="images/BlueLed.jpeg" alt="50% duty cycle" width="250"/>
 
 *  "F0" is recieved at the receiver so Blue Led should blink *
 
