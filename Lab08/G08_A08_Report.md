@@ -1,7 +1,7 @@
 
 # Lab 8 Commited
 
-Group 11: EE23MT017 Sahil Bagade; EE23Mt008 JAYASURIYA T J
+Group 11:  EE23Mt008 JAYASURIYA T J ; EE23MT017 Sahil Bagade
 
 ## Aim: Program your microontroller to transmit:
 
