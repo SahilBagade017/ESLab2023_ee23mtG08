@@ -14,7 +14,7 @@ over UART with baud rate 9600 and odd parity.
 Your program should also listen for incoming data on the UART with the same baud and parity config; if "AA" is received LED should be GREEN; if "F0" is recieved, the LED should be BLUE and if any error is detected LED should be RED.
 
 
-## Codes:
+## Code:
 
         	
         #include <stdint.h>
