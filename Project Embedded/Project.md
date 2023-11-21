@@ -3,7 +3,8 @@
 
 Group 11: EE23MT017 Sahil Bagade; EE23Mt008 JAYASURIYA T J
 
-## Aim: Create a temperature controller using a DAC, ADC and LM35 as temperature sensor:
+## Aim: 
+Create a temperature controller using a DAC, ADC and LM35 as temperature sensor:
 
 ## Components Used: 
             1 : Tiva™ TM4C123GH6PM Microcontroller
@@ -16,12 +17,15 @@ Group 11: EE23MT017 Sahil Bagade; EE23Mt008 JAYASURIYA T J
             8 : Jumpers
 
 ## Description 
-The Project consists of Microcontroller and Temperature sensor module.When the voltage is applied to the module, the current will pass through the resistor. As the current is passed thorugh the resistor, the resistor will heat up. This rise of temperature will be sensed by the LM35 temperature sensor.The range of LM35 sensor for temperature is  −55°C to 150°C. The LM35 sensor has working range of 4v to 30v. This data will be sent from the output pin if LM35 to the microcontroller.For every 1 degree change, it will send 0.1mv to the microcontroller. 
 
-The controller will then take the analog input at the port PE1 and convert it into ditital signal using the ADC module.
+.
+
+The Microcontroller generates the PWM signal which has a duty cycle of 50% and is given to the base of the transistor through the resistor. The collector end of the BJT is connected to the power supply and the emitter is grounded. The output voltage from the BJT is given to the input of the Temperature Sensor Module, due to which the resistor will heat up. This temperature rise will be sensed by the LM35 temperature sensor. The LM35 sensor has 3 pins for Vin, Vout, and Ground. The range of the LM35 sensor for temperature is  −55°C to 150°C. The LM35 sensor has a working range of 4v to 30v. The change in temperature in the resistor is proportional to the Vout signal. The signal is sent from the output pin of LM35 to the microcontroller. For every 1-degree change, it will send 0.1mv to the microcontroller.  
 
 Temperature sensor module
-<img src="images/Temperature Sensor Module.jpeg" alt="Temperature Sensor Module" width="250"/>
+
+
+<img src="images/Temperature Sensor Module.jpeg" alt="Temperature Sensor Module" width="550"/>
 
 
 
@@ -49,13 +53,24 @@ Temperature sensor module
     • Low-Impedance Output, 0.1 Ω for 1-mA Load
  
 TIVA Microcontroller
-<img src="images/Tiva.jpeg" alt="Tiva" width="250"/>
+
+
+<img src="images/Tiva.jpeg" alt="Tiva" width="550"/>
+
+
+BJT
+
+
+<img src="images/BJT 2N3055.jpeg" alt="Tiva" width="550"/>
 
     
     
     
+## Circuit Diagram
+<img src="images/Ckt Diag.jpeg" alt="Tiva" width="750"/>
 
-## Codes:
+
+## Code
 
     /*PWM Waveform 100KHz with variable duty cycle on pin PF2 (Blue LED)
     Initial duty cycle=50%, SW1 decreases duty cycle by 5%, SW2 increases duty cycle by 5% */
@@ -269,8 +284,8 @@ TIVA Microcontroller
 
 ## Results:
 
-
-
+We have to sense the temperature of a resistor using an LM35 temperature sensor. And we have to control the temperature of a resistor using a switch. 
+The  temperature sensing is done by controlling the current in the Temperature sensing module using a switch of the microcontroller, where we have used the LM35 sensor to detect the rise in temperature and sent the data to the microcontroller
 
 =======
 
