@@ -1,30 +1,57 @@
-<<<<<<< HEAD
-# Project Commited
+# TEMPERATURE SENSING AND CONTROLLING
+
 
 Group 11: EE23MT017 Sahil Bagade; EE23Mt008 JAYASURIYA T J
 
 ## Aim: Create a temperature controller using a DAC, ADC and LM35 as temperature sensor:
 
 ## Components Used: 
-            Tiva™ TM4C123GH6PM Microcontroller
-            LM35
-            Power Transistor 
-            Power Supply
+            1 : Tiva™ TM4C123GH6PM Microcontroller
+            2 : LM35 (Temperature sensor module)
+            3 : Power Transistor 
+            4 : 1kohm resistor
+            5 : 2N2222 transistor
+            6 : DC power supply
+            7 : Breadboard
+            8 : Jumpers
 
 ## Description 
-    The Project is simple
-LM35
- 
-    LM35 is a temperature sensor that provides analog signal as its output which is linearly proportional to the temperature in degree celsius.
+The Project consists of Microcontroller and Temperature sensor module.When the voltage is applied to the module, the current will pass through the resistor. As the current is passed thorugh the resistor, the resistor will heat up. This rise of temperature will be sensed by the LM35 temperature sensor.The range of LM35 sensor for temperature is  −55°C to 150°C. The LM35 sensor has working range of 4v to 30v. This data will be sent from the output pin if LM35 to the microcontroller.For every 1 degree change, it will send 0.1mv to the microcontroller. 
 
+The controller will then take the analog input at the port PE1 and convert it into ditital signal using the ADC module.
+
+Temperature sensor module
+<img src="images/Temperature Sensor Module.jpeg" alt="Temperature Sensor Module" width="250"/>
+
+
+
+ 
+  The Temperature sensor module consists of one resistor and one  LM35 as a temperature sensor. 
     LM35 has three pins:
 
     PIN 1 : Vcc, it is the input pin (5v)
 
-    PIN 2 : Vout, we get output (it should be connected to the analog pin of arduino)
+    PIN 2 : Vout, we get output (it should be connected to the analog pin microcontroller)
 
     PIN 3 : GND, it is used for ground
+
+    Features: 
+    • Calibrated Directly in Celsius (Centigrade)
+    • Linear + 10-mV/°C Scale Factor
+    • 0.5°C Ensured Accuracy (at 25°C)
+    • Rated for Full −55°C to 150°C Range
+    • Suitable for Remote Applications
+    • Low-Cost Due to Wafer-Level Trimming
+    • Operates From 4 V to 30 V
+    • Less Than 60-μA Current Drain
+    • Low Self-Heating, 0.08°C in Still Air
+    • Non-Linearity Only ±¼°C Typical
+    • Low-Impedance Output, 0.1 Ω for 1-mA Load
+ 
 TIVA Microcontroller
+<img src="images/Tiva.jpeg" alt="Tiva" width="250"/>
+
+    
     
     
 
@@ -243,16 +270,7 @@ TIVA Microcontroller
 ## Results:
 
 
-<img src="images/green_led.jpeg" alt="Green LED" width="250"/>
 
-* "AA" is received *
-
-<img src="images/50_duty_cycle.jpeg" alt="50% duty cycle" width="250"/>
-
-*  "F0" is recieved *
-
-<img src="images/PWM_signal_decrease_by_5.jpeg" alt="PWM signal decrease by 5%" width="250"/>
-
-*  Error is detected LED should be RED *
 
 =======
+
