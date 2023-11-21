@@ -32,7 +32,9 @@ Temperature sensor module
 
 
  
-  The Temperature sensor module consists of one resistor and one  LM35 as a temperature sensor. 
+The Temperature sensor module consists of one resistor and one  LM35 as a temperature sensor.
+<img src="images/LM35.png" alt="Tiva" height="350" width="550"/>
+
     LM35 has three pins:
 
     PIN 1 : Vcc, it is the input pin (5v)
@@ -65,6 +67,7 @@ BJT
 
 <img src="images/BJT 2N3055.jpeg" alt="Tiva" width="550"/>
 
+<img src="images/BJT Pins.jpeg" alt="Tiva" width="550"/>
     
     
     
@@ -72,7 +75,19 @@ BJT
 <img src="images/Ckt Diag.jpeg" alt="Tiva" width="750"/>
 
 ## Circuit Implementation
-<img src="images/Ckt Diag.jpeg" alt="Tiva" width="750"/>
+<img src="images/Ckt implementation.jpeg" alt="Tiva" width="750"/>
+
+## PWM Signal
+<img src="images/PWM.jpeg" alt="Tiva" width="750"/>
+
+## PWM Max Duty Cycle
+<img src="images/PWM Max.jpeg" alt="Tiva" width="750"/>
+
+## PWM Min Duty Cycle
+<img src="images/PWM Min.jpeg" alt="Tiva" width="750"/>
+
+
+ 
 
 
 
