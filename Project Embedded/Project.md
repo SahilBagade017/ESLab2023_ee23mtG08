@@ -1,7 +1,9 @@
 # TEMPERATURE SENSING AND CONTROLLING
 
 
-Group 11: EE23MT017 Sahil Bagade; EE23Mt008 JAYASURIYA T J
+## Group 11: 
+            EE23MT017 Sahil Bagade;   EE23MT017@gmail.com            
+            EE23Mt008 JAYASURIYA T J  EE23MT008@gmail.com
 
 ## Aim: 
 Create a temperature controller using a DAC, ADC and LM35 as temperature sensor:
@@ -68,6 +70,10 @@ BJT
     
 ## Circuit Diagram
 <img src="images/Ckt Diag.jpeg" alt="Tiva" width="750"/>
+
+## Circuit Implementation
+<img src="images/Ckt Diag.jpeg" alt="Tiva" width="750"/>
+
 
 
 ## Code
